@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acsys ERP - Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="menu-icon">&#9776;</div>
+        <div class="logo">Acsys ERP</div>
+        <div class="user-icon">&#128100;</div>
+    </header>
+
+    <div class="container">
+        
+        <table class="info-table">
+            <tr><td>COURSE</td><td>B.COM.GENERAL</td></tr>
+            <tr><td>Current Sem</td><td>5</td></tr>
+            <tr><td>STUDENT NAME</td><td>FAISAL QASIM</td></tr>
+            <tr><td>STUDENT ID</td><td>2023-0517</td></tr>
+            <tr><td>CU Reg.No</td><td>043-1111-0862-23</td></tr>
+        </table>
+
+        <div class="section-card">
+            <h2>Pending Fees</h2>
+            <button id="payNowBtn" class="btn-pay">Pay Now</button>
+            <div class="table-wrapper">
+                <table class="fee-table">
+                    <thead>
+                        <tr>
+                            <th>Sl.No.</th>
+                            <th>Year/Semester</th>
+                            <th>Fees Name</th>
+                            <th>Fees Amount</th>
+                            <th>Last Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 <input type="checkbox" class="fee-checkbox" data-amount="3400.00"></td>
+                            <td>6</td>
+                            <td>Admission Fees</td>
+                            <td>6600.00</td>
+                            <td>14 Feb 2026 23:00:00</td>
+                        </tr>
+                        <tr>
+                            <td>2 <input type="checkbox" class="fee-checkbox" data-amount="3400.00"></td>
+                            <td>6</td>
+                            <td>Admission Fees</td>
+                            <td>6600.00</td>
+                            <td>14 Feb 2026 23:00:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>Paid Fees</h2>
+            <div class="table-wrapper">
+                <table class="fee-table">
+                    <thead>
+                        <tr>
+                            <th>Sl.No.</th>
+                            <th>Fees Name</th>
+                            <th>Year/Semester</th>
+                            <th>Fees Amount</th>
+                            <th>PaidOn</th>
+                            <th>Receipt</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Admission Fees</td>
+                            <td>4</td>
+                            <td>5900.00</td>
+                            <td>23/05/2025</td>
+                            <td><a href="#" class="receipt-link">View/Do...</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Searching Fees</td>
+                            <td>2</td>
+                            <td>50.00</td>
+                            <td>25/11/2025</td>
+                            <td><a href="#" class="receipt-link">View/Do...</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Admission Fees</td>
+                            <td>5</td>
+                            <td>6425.00</td>
+                            <td>19/12/2025</td>
+                            <td><a href="#" class="receipt-link">View/Do...</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  <div class="modal-overlay" id="modalOverlay">
+        <div class="notice-box">
+            <div class="notice-header">Notice</div>
+            <div class="notice-body">
+                This portal will open on 11 February 2026 at 12 p.m.
+            </div>
+            <button class="ok-btn" id="closeNoticeBtn">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

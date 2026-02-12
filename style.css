@@ -1,0 +1,297 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #dce1e9; /* Light grey-blue background from image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Styling */
+.header {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+/* Login Card Styling */
+.login-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.session-text {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #555;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3c8dbc;
+}
+
+/* Button Styling */
+.login-btn {
+    background-color: #3482b5; /* Similar blue to the image */
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #2c6a94;
+}
+
+/* Error Message Styling */
+.error-msg {
+    color: red;
+    font-size: 12px;
+    display: none; /* Hidden by default */
+}
+
+/* Footer Styling */
+.footer {
+    font-size: 12px;
+    color: #3482b5;
+    line-height: 1.6;
+}
+
+.footer a {
+    color: #5ca1cc;
+    text-decoration: none;
+    margin: 0 2px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef1f5;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+/* Header */
+header {
+    background-color: #438eb9;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Main Container */
+.container {
+    padding: 15px;
+}
+
+/* Info Table */
+.info-table {
+    width: 100%;
+    max-width: 450px;
+    border-collapse: collapse;
+    background: white;
+    margin-bottom: 25px;
+}
+
+.info-table td {
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.info-table td:first-child {
+    background-color: #fcfcfc;
+    width: 35%;
+}
+
+/* Section Cards */
+.section-card {
+    background-color: #ffffff;
+    border-top: 3px solid #d2d6de;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin: 0 0 15px 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Buttons */
+.btn-pay {
+    background-color: #59ca9d;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 15px;
+    transition: background 0.3s;
+}
+
+.btn-pay:hover {
+    background-color: #4bb38a;
+}
+
+/* Data Tables */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.fee-table th, .fee-table td {
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.fee-table th {
+    background-color: #f8f8f8;
+    color: #666;
+}
+
+.receipt-link {
+    color: #438eb9;
+    text-decoration: none;
+}
+
+.receipt-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    display: none; /* Controlled by JS */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.notice-box {
+    background: white;
+    width: 90%;
+    max-width: 350px;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.notice-header {
+    background-color: #3a8fb7;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.notice-body {
+    padding: 25px 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.ok-btn {
+    background-color: #3a8fb7;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ok-btn:hover {
+    background-color: #2e7394;
+}
+
+
